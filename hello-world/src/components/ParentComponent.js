@@ -25,7 +25,7 @@ class ParentComponent extends Component {
     render() {
         return (
             <div>
-                <ChildComponent greetHandler={(x) => this.greetParent(x)} />
+                <ChildComponent greetHandler={(x) => this.greetParent(x)} name="KARIM" />
             </div>
         )
     }
