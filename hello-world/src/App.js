@@ -9,25 +9,52 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
-function App() {
+import UserGreeting from './components/UserGreeting';
+import GreetMe from './components/GreetMe';
+import { Component } from 'react';
+
+/* function App() {
   return (
     <div className="App">
 
-      <ParentComponent />
-
-      {/* 
+      <GreetMe />
+      {/*
+       <ParentComponent /> 
       <EventBind />
       <FunctionClick />
       <ClassClick />
       <Counter /> 
-      <Greet name="KARIM" />
       <Welcome age="38" /> 
+      <UserGreeting></UserGreeting>
        <Hello />
+       <Greet name="KARIM" />
       <Message>
-      </Message> */}
-
+      </Message> }
     </div>
   );
+} */
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+
+        <GreetMe />
+        {/*
+         <ParentComponent /> 
+        <EventBind />
+        <FunctionClick />
+        <ClassClick />
+        <Counter /> 
+        <Welcome age="38" /> 
+        <UserGreeting></UserGreeting>
+         <Hello />
+         <Greet name="KARIM" />
+        <Message>
+        </Message> */}
+      </div>
+    );
+  }
 }
 
 export default App;
