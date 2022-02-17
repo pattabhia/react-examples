@@ -1,5 +1,6 @@
 import React from "react";
 
+//using props by functional component
 const GreetMeByName = (props) => {
     return (
         <div>

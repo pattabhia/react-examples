@@ -13,6 +13,7 @@ import UserGreeting from './components/UserGreeting';
 import GreetMe from './components/GreetMe';
 import { Component } from 'react';
 import GreetMeByName from './components/GreetMeByName';
+import WelcomeMeByName from './components/WelcomeMeByName';
 
 /* function App() {
   return (
@@ -40,9 +41,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <GreetMeByName name="Ram" />
-
+        <WelcomeMeByName name="Bruce" />
         {/*
+          <GreetMeByName name="Ram" />
          <ParentComponent /> 
         <EventBind />
         <FunctionClick />
