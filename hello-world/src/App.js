@@ -12,6 +12,7 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import GreetMe from './components/GreetMe';
 import { Component } from 'react';
+import GreetMeByName from './components/GreetMeByName';
 
 /* function App() {
   return (
@@ -34,12 +35,13 @@ import { Component } from 'react';
   );
 } */
 
+
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <GreetMeByName name="Ram" />
 
-        <GreetMe />
         {/*
          <ParentComponent /> 
         <EventBind />
@@ -48,8 +50,9 @@ class App extends Component {
         <Counter /> 
         <Welcome age="38" /> 
         <UserGreeting></UserGreeting>
-         <Hello />
-         <Greet name="KARIM" />
+        <Hello />
+        <Greet name="KARIM" />
+        <GreetMe />
         <Message>
         </Message> */}
       </div>
