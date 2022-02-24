@@ -10,7 +10,7 @@ class WelcomeMeByName extends Component {
         }
     }
 
-    subscribe() {
+    subscribe = () => {
         this.setState({
             message: "Subscribed"
         })
@@ -19,11 +19,12 @@ class WelcomeMeByName extends Component {
     render() {
         //don't need to give props as an argument in class component,
         //it is optional, giving no harm
+        const { name } = this.props
         return (
             <div>
-                <h1>Welcome {this.props.name}</h1>
+                <h1>Welcome {name}</h1>
                 <h1>You are on {this.state.message} page</h1>
-                <button onClick={() => this.subscribe()}>Click Me</button>
+                <button onClick={this.subscribe}>Click Me</button>
             </div>
         )
 

@@ -15,12 +15,16 @@ class Counter extends Component {
         //     count: this.state.count + 1
         // }, () => console.log(this.state.count))
 
+        //always set state thru setState Argument
+
         this.setState(prevState => ({
             count: prevState.count + 1
         }))
     }
 
     testFive() {
+        this.changeMe()
+        this.changeMe()
         this.changeMe()
         this.changeMe()
         this.changeMe()

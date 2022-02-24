@@ -14,6 +14,7 @@ import GreetMe from './components/GreetMe';
 import { Component } from 'react';
 import GreetMeByName from './components/GreetMeByName';
 import WelcomeMeByName from './components/WelcomeMeByName';
+import DisplayPage from './components/DisplayPage';
 
 /* function App() {
   return (
@@ -41,11 +42,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <WelcomeMeByName name="Bruce" />
+        <DisplayPage />
         {/*
-          <GreetMeByName name="Ram" />
-         <ParentComponent /> 
+        <WelcomeMeByName name="Bruce" />
+        <GreetMeByName name="Ram" />
+        <ParentComponent /> 
         <EventBind />
+        <Counter></Counter>
         <FunctionClick />
         <ClassClick />
         <Counter /> 

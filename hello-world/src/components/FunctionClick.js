@@ -2,13 +2,13 @@ import React from 'react'
 
 function FunctionClick() {
 
-    function submitRequest() {
+    function submit() {
         console.log("Button Clicked")
     }
 
     return (
         <div>
-            <button onClick={submitRequest}>SUBMIT</button>
+            <button onClick={submit}>SUBMIT</button>
         </div>
     )
 }

@@ -11,9 +11,11 @@ class EventBind extends Component {
     }
 
     clickMe = () => {
-        this.setState({
-            message: "GoodBye"
-        })
+        this.setState(
+            {
+                message: "GoodBye"
+            }
+        )
     }
 
 
@@ -21,7 +23,13 @@ class EventBind extends Component {
         return (
             <div>
                 <div>{this.state.message}</div>
-                <button onClick={() => this.clickMe()}>SUBMIT</button>
+                <button
+
+                    onClick={
+                        this.clickMe
+                    }
+
+                >SUBMIT</button>
             </div>
         )
     }
